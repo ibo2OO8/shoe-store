@@ -21,12 +21,7 @@ class ShoeListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(
-            inflater,
-            R.layout.fragment_shoe_list,
-            container,
-            false
-        )
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_list, container, false)
         binding.floatingActionButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(
                 ShoeListFragmentDirections.actionShoeListFragmentToAddShoeFragment()
