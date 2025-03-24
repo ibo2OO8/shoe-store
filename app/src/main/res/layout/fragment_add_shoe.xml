@@ -2,9 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
     <data>
-
         <variable
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
@@ -13,7 +11,6 @@
             name="viewModel"
             type="com.udacity.shoestore.viewmodels.AddShoeViewModel" />
     </data>
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -88,22 +85,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutSize"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/indent_x1">
-
-                <com.udacity.shoestore.views.ShoeSizeEditText
-                    android:id="@+id/editTextSize"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:hint="@string/size_hint"
-                    android:inputType="numberDecimal"
-                    app:shoeSize="@={shoe.size}" />
-
-            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/buttonAddShoe"
